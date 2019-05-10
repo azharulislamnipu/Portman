@@ -24,7 +24,19 @@ body { background-color: #ffffff; line-height: 24px; font-size: 16px; font-style
 
 h1, h2, h3, h4, h5, h6 { font-family: "Helvetica"; font-weight: 400; margin-top: 0; margin-bottom: 0; color: #1f2226; }
 
-p { font-size: 16px; font-weight: 400; line-height: 16px; color: #252525; margin-bottom: 15px; font-family: "Lato", sans-serif; }
+h1 { font-size: 40px; }
+
+h2 { font-size: 32px; }
+
+h3 { font-size: 28px; }
+
+h4 { font-size: 24px; }
+
+h5 { font-size: 20px; }
+
+h6 { font-size: 16px; }
+
+p { font-size: 16px; font-weight: 400; line-height: 16px; color: #252525; font-family: "Lato", sans-serif; }
 
 p:last-child { margin-bottom: 0; }
 
