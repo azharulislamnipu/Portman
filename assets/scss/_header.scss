@@ -1,0 +1,18 @@
+/*-------- 3. header style ---------*/
+.header-area{
+  overflow: hidden;
+  position: relative;
+}
+.custom-navbar{
+  height: 152px;
+  background-color: $white;
+  background: url('#{$assetPath}/nav/nav_bg.png') no-repeat;
+  background-size: auto;
+  background-position: left center;
+  padding: 0;
+  a.navbar-brand{
+    display: block;
+    height: 100px;
+    width: 114px;
+  }
+}

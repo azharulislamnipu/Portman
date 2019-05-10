@@ -1,0 +1,62 @@
+// Font Family
+$helvetica: 'Helvetica';
+$lato: 'Lato', sans-serif;
+
+
+// text Colors ---------------
+
+$black: #000000;
+$black-light: #565656;
+$black-low: #464646;
+$dark: #252525;
+$dark-light: #363636;
+$white: #ffffff;
+
+// Theme Color
+$theme-color: #be8930;
+
+//theme font size
+$base-font-size:16px;
+$font-18:$base-font-size+2;
+$font-20:$font-18+2;
+$font-22:$font-20+2;
+$font-24:$font-22+2;
+$font-26:$font-24+2;
+$font-28:$font-26+2;
+$font-30:$font-28+2;
+$font-32:$font-30+2;
+$font-34:$font-32+2;
+$font-36:$font-34+2;
+$font-38:$font-36+2;
+$font-40:$font-38+2;
+
+
+//theme weight
+$thin:100;
+$light:300;
+$regular:400;
+$bold:700;
+$extra-bold:900;
+
+//theme asset path
+$assetPath : "../img";
+// Responsive Variables 
+$xx-layout : 'only screen and (min-width: 1366px) and (max-width: 1600px)';
+$xl-layout : 'only screen and (min-width: 1200px) and (max-width: 1365px)';
+$lg-layout : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs-layout:'only screen and (max-width: 767px)';
+$sm-layout: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+
+.single-testimonial {
+    p {
+        font-size: 16px;
+        line-height: 32px;
+        margin: 30px auto 32px;
+        width: 80%;
+        @media #{$xl-layout} {
+            width: 90%;
+        }
+      }
+}
