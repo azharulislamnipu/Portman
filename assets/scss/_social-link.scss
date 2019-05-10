@@ -1,0 +1,22 @@
+/*-------- 3. social link style ---------*/
+.social{
+  position: relative;
+  overflow: hidden;
+  li{
+    padding: 0 20px;
+    &:first-child{
+      padding-left: 40px;
+    }
+    &:last-child{
+      padding-right: 25px;
+    }
+    a{
+      color: $theme-color;
+      font-size: $base-font-size;
+      @extend .hover;
+      &:hover{
+           opacity: 0.7;
+      }
+    }
+  }
+}

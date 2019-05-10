@@ -2,7 +2,8 @@
  Template Name: Bootstrap 4 Template Version: 1
 
 -----------------------------------------------------------------------------------  CSS INDEX ===================
-	 1. Template default CSS 2. Custom font CSS 3. Header 
+	 1. Template default CSS 2. Custom font CSS 3. Header 3. Social-link CSS
+
 -----------------------------------------------------------------------------------*/
 .single-testimonial p { font-size: 16px; line-height: 32px; margin: 30px auto 32px; width: 80%; }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) { .single-testimonial p { width: 90%; } }
@@ -68,11 +69,24 @@ ul { list-style: outside none none; margin: 0; padding: 0; }
 
 .bg-img { background-position: center center; background-size: cover; }
 
+/************************* horizontal divider
+*************************/
+.h-divider { position: relative; }
+.h-divider:before { content: ''; position: absolute; left: 0; right: 0; top: -38px; height: 100px; width: 1px; background-color: #ebebeb; }
+
+/************************* hover
+*************************/
+.hover:hover, .navbar-nav li > a.nav-link:hover, a.phone:hover, .social li a:hover, .hover:active, .navbar-nav li > a.nav-link:active, a.phone:active, .social li a:active, .hover:focus, .navbar-nav li > a.nav-link:focus, a.phone:focus, .social li a:focus { color: #be8930; }
+
+.theme-color { color: #be8930; }
+
 /************************* Basic margin padding
 *************************/
 .m-0 { margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; }
 
 .p-0 { padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; }
+
+.p-20 { padding: 20px; }
 
 /************************* Margin top
 *************************/
@@ -613,9 +627,24 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity: 1; -ms-fi
 .wrapper { overflow-x: hidden; }
 
 /*-------- 3. header style ---------*/
-.header-area { overflow: hidden; position: relative; }
+.header-area { overflow: hidden; position: relative; background-color: #ffffff; }
 
-.custom-navbar { height: 152px; background-color: #ffffff; background: url("../img/nav/nav_bg.png") no-repeat; background-size: auto; background-position: left center; padding: 0; }
+.custom-navbar { min-height: 152px; background-color: #ffffff; background: url("../img/nav/nav_bg.png") no-repeat; background-size: auto; background-position: left center; padding: 0; }
 .custom-navbar a.navbar-brand { display: block; height: 100px; width: 114px; }
+
+.navbar-expand-lg .navbar-nav .nav-link { padding-right: 25px; padding-left: 25px; }
+
+.navbar-nav li > a.nav-link { padding: 0px 25px; color: #565656; font-size: 16px; font-family: "Lato", sans-serif; }
+
+a.phone { color: #565656; font-size: 16px; font-family: "Lato", sans-serif; }
+a.phone i { margin-right: 12px; color: #be8930; font-size: 16px; }
+
+/*-------- 3. social link style ---------*/
+.social { position: relative; overflow: hidden; }
+.social li { padding: 0 20px; }
+.social li:first-child { padding-left: 40px; }
+.social li:last-child { padding-right: 25px; }
+.social li a { color: #be8930; font-size: 16px; }
+.social li a:hover { opacity: 0.7; }
 
 /*# sourceMappingURL=style.css.map */

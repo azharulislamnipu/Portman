@@ -177,9 +177,36 @@ ul {
     background-size: cover;
 }
 
+/*************************
+  horizontal divider
+*************************/
+.h-divider{
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -38px;
+        height: 100px;
+        width: 1px;
+        background-color: #ebebeb;
+    }
 
+}
 
+/*************************
+  hover
+*************************/
+.hover{
+    &:hover,&:active,&:focus{
+        color:$theme-color
+    }
+}
 
+.theme-color{
+    color: $theme-color;
+}
 /*************************
   Basic margin padding
 *************************/
@@ -198,6 +225,9 @@ ul {
     padding-left: 0;
 }
 
+.p-20{
+    padding: 20px;
+}
 
 /*************************
          Margin top

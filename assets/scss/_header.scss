@@ -2,9 +2,10 @@
 .header-area{
   overflow: hidden;
   position: relative;
+  background-color: $white;
 }
 .custom-navbar{
-  height: 152px;
+  min-height: 152px;
   background-color: $white;
   background: url('#{$assetPath}/nav/nav_bg.png') no-repeat;
   background-size: auto;
@@ -14,5 +15,29 @@
     display: block;
     height: 100px;
     width: 114px;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+   padding-right: 25px;
+   padding-left: 25px;
+}
+.navbar-nav{
+  li>a.nav-link{
+    padding: 0px 25px ;
+    color: $black-light;
+    font-size: $base-font-size;
+    font-family: $lato;
+    @extend .hover;
+  }
+}
+a.phone{
+  color: $black-light;
+  font-size: $base-font-size;
+  font-family: $lato;
+  @extend .hover;
+  i{
+    margin-right: 12px;
+    color: $theme-color;
+    font-size: $base-font-size;
   }
 }
