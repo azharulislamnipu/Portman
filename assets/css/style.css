@@ -2,7 +2,7 @@
  Template Name: Bootstrap 4 Template Version: 1
 
 -----------------------------------------------------------------------------------  CSS INDEX ===================
-	 1. Template default CSS 2. Custom font CSS 3. Header 3. Social-link CSS
+	 1. Template default CSS 2. Custom font CSS 3. Header 3. Social-link CSS 4. Footer CSS
 
 -----------------------------------------------------------------------------------*/
 .single-testimonial p { font-size: 16px; line-height: 32px; margin: 30px auto 32px; width: 80%; }
@@ -37,7 +37,7 @@ h5 { font-size: 20px; }
 
 h6 { font-size: 16px; }
 
-p { font-size: 16px; font-weight: 400; line-height: 16px; color: #252525; font-family: "Lato", sans-serif; }
+p { font-size: 16px; font-weight: 400; line-height: 1.5; font-family: "Lato", sans-serif; }
 
 p:last-child { margin-bottom: 0; }
 
@@ -646,5 +646,11 @@ a.phone i { margin-right: 12px; color: #be8930; font-size: 16px; }
 .social li:last-child { padding-right: 25px; }
 .social li a { color: #be8930; font-size: 16px; }
 .social li a:hover { opacity: 0.7; }
+
+/*-------- 12. footer us style ---------*/
+.footer-top { overflow: hidden; position: relative; min-height: 650px; background: #363636 url("../img/footer/footer-bg.png") no-repeat; background-size: auto; background-position: left center; padding: 60px 0 80px 0; }
+.footer-top p { color: #ffffff; line-height: 1.5; }
+
+.footer-bottom { overflow: hidden; position: relative; background-color: #252525; padding: 20px 0; color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

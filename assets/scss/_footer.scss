@@ -1,0 +1,22 @@
+/*-------- 12. footer us style ---------*/
+.footer-top{
+  overflow: hidden;
+  position: relative;
+  min-height: 650px;
+  background: $dark-light url('#{$assetPath}/footer/footer-bg.png') no-repeat;
+  background-size: auto;
+  background-position: left center;
+  padding: 60px 0 80px 0;
+
+  p{
+      color: $white;
+      line-height: 1.5;
+  }
+}
+.footer-bottom{
+  overflow: hidden;
+  position: relative;
+  background-color: $dark;
+  padding: 20px 0;
+  color: $white;
+}
