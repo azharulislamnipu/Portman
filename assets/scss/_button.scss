@@ -1,0 +1,134 @@
+/*-------- 3. Button us style ---------*/
+.btn {
+  -wekbit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: $lato;
+  font-size: $base-font-size;
+  font-weight: $regular;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  text-align: center;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.2;
+  transition: none;
+  outline: none !important;
+  cursor: pointer;
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.btn, .btn:visited, .btn:active, .btn:focus {
+  color: white;
+}
+.btn:hover {
+  transition: none;
+}
+@media (min-width: 992px) {
+  .btn:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.btn-min-width-normal {
+  min-width: 100%;
+}
+
+.btn-block {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  padding: 0 10px;
+}
+.btn-hexagon {
+  height: 45px;
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  border-radius: 10px 10px 10px 10px / 8px 8px 8px 8px;
+  flex-grow: 1;
+}
+.btn-hexagon:after, .btn-hexagon:before {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  z-index: -2;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  border-radius: 5px 10px 5px 5px / 5px 5px 5px 10px;
+
+}
+.btn-hexagon:before {
+  left: -13px;
+  -webkit-transform: scale(0.6, 1.06) rotate(-45deg);
+  transform: scale(0.6, 1.06) rotate(-45deg);
+  border-top: solid 3px #ffffff;
+  border-left: solid 3px #ffffff;
+  background-color: #f2f3f5;
+  border-radius: 5px 10px 5px 5px / 5px 5px 5px 10px;
+}
+.btn-hexagon:after {
+  right: -13px;
+  -webkit-transform: scale(0.6, 1.06) rotate(45deg);
+  transform: scale(0.6, 1.06) rotate(45deg);
+  border-top: solid 3px #ffffff;
+  border-right: solid 3px #ffffff;
+  background-color: #f2f3f5;
+}
+.btn-orange-fill {
+  -webkit-filter: drop-shadow(0 15px 10px rgba(62, 206, 142, 0.1));
+  filter: drop-shadow(0 15px 10px rgba(62, 206, 142, 0.1));
+}
+.btn-orange-fill:hover {
+  -webkit-filter: drop-shadow(0);
+  filter: drop-shadow(0);
+}
+.btn-orange-fill:hover .btn {
+  background-image: none;
+  background-color: #ffb139;
+  color: #ffffff;
+}
+.btn-orange-fill:hover .btn:before {
+  background-color: #ffb139;
+  border-top-color: #ffb139;
+  border-left-color: #ffb139;
+}
+.btn-orange-fill:hover .btn:after {
+  background-color: #ffb139;
+  border-top-color: #ffb139;
+  border-right-color: #ffb139;
+}
+.btn-orange-fill .btn {
+  background-color: transparent;
+  background-image: linear-gradient(to right, #B9812C 0%, #E3C74D 100%);
+  color: #ffffff;
+}
+
+.btn-orange-fill .btn:before {
+  background-color: #B9812C;
+  border-top-color: #B9812C;
+  border-left-color: #B9812C;
+}
+.btn-orange-fill .btn:after {
+  background-color: #E3C74D;
+  border-top-color: #E3C74D;
+  border-right-color: #E3C74D;
+}
+.btn-orange-fill .btn, .btn-orange-fill .btn:visited, .btn-orange-fill .btn:active, .btn-orange-fill .btn:focus {
+  color: #ffffff;
+}
+
+

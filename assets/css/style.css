@@ -2,7 +2,7 @@
  Template Name: Bootstrap 4 Template Version: 1
 
 -----------------------------------------------------------------------------------  CSS INDEX ===================
-	 1. Template default CSS 2. Custom font CSS 3. Header 3. Social-link CSS 4. Footer CSS
+	 1. Template default CSS 2. Custom font CSS 2. button  CSS 4. Header 3. Social-link CSS 4. Footer CSS
 
 -----------------------------------------------------------------------------------*/
 .single-testimonial p { font-size: 16px; line-height: 32px; margin: 30px auto 32px; width: 80%; }
@@ -76,7 +76,7 @@ ul { list-style: outside none none; margin: 0; padding: 0; }
 
 /************************* hover
 *************************/
-.hover:hover, .navbar-nav li > a.nav-link:hover, a.phone:hover, .social li a:hover, .hover:active, .navbar-nav li > a.nav-link:active, a.phone:active, .social li a:active, .hover:focus, .navbar-nav li > a.nav-link:focus, a.phone:focus, .social li a:focus { color: #be8930; }
+.hover:hover, .navbar-nav li > a.nav-link:hover, a.phone:hover, .social li a:hover, .footer-menu li > a:hover, .contact-us li > a:hover, .hover:active, .navbar-nav li > a.nav-link:active, a.phone:active, .social li a:active, .footer-menu li > a:active, .contact-us li > a:active, .hover:focus, .navbar-nav li > a.nav-link:focus, a.phone:focus, .social li a:focus, .footer-menu li > a:focus, .contact-us li > a:focus { color: #be8930; }
 
 .theme-color { color: #be8930; }
 
@@ -626,6 +626,45 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity: 1; -ms-fi
 ------------------------------------------*/
 .wrapper { overflow-x: hidden; }
 
+/*-------- 3. Button us style ---------*/
+.btn { -wekbit-border-radius: 3px; border-radius: 3px; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; margin: 0; border: 0; box-shadow: none; text-align: center; background: transparent; text-decoration: none; text-transform: uppercase; line-height: 1.2; transition: none; outline: none !important; cursor: pointer; }
+.btn:focus { box-shadow: none; }
+
+.btn, .btn:visited, .btn:active, .btn:focus { color: white; }
+
+.btn:hover { transition: none; }
+
+@media (min-width: 992px) { .btn:hover { text-decoration: none; cursor: pointer; color: white; } }
+.btn-min-width-normal { min-width: 100%; }
+
+.btn-block { position: relative; display: inline-block; vertical-align: middle; z-index: 2; -webkit-transform: translateZ(0); transform: translateZ(0); will-change: transform; padding: 0 10px; }
+
+.btn-hexagon { height: 45px; background-color: #f2f3f5; display: flex; justify-content: center; align-items: center; border-radius: 10px 10px 10px 10px / 8px 8px 8px 8px; flex-grow: 1; }
+
+.btn-hexagon:after, .btn-hexagon:before { content: ""; position: absolute; background-color: inherit; z-index: -2; width: 30px; height: 30px; top: 8px; border-radius: 5px 10px 5px 5px / 5px 5px 5px 10px; }
+
+.btn-hexagon:before { left: -13px; -webkit-transform: scale(0.6, 1.06) rotate(-45deg); transform: scale(0.6, 1.06) rotate(-45deg); border-top: solid 3px #ffffff; border-left: solid 3px #ffffff; background-color: #f2f3f5; border-radius: 5px 10px 5px 5px / 5px 5px 5px 10px; }
+
+.btn-hexagon:after { right: -13px; -webkit-transform: scale(0.6, 1.06) rotate(45deg); transform: scale(0.6, 1.06) rotate(45deg); border-top: solid 3px #ffffff; border-right: solid 3px #ffffff; background-color: #f2f3f5; }
+
+.btn-orange-fill { -webkit-filter: drop-shadow(0 15px 10px rgba(62, 206, 142, 0.1)); filter: drop-shadow(0 15px 10px rgba(62, 206, 142, 0.1)); }
+
+.btn-orange-fill:hover { -webkit-filter: drop-shadow(0); filter: drop-shadow(0); }
+
+.btn-orange-fill:hover .btn { background-image: none; background-color: #ffb139; color: #ffffff; }
+
+.btn-orange-fill:hover .btn:before { background-color: #ffb139; border-top-color: #ffb139; border-left-color: #ffb139; }
+
+.btn-orange-fill:hover .btn:after { background-color: #ffb139; border-top-color: #ffb139; border-right-color: #ffb139; }
+
+.btn-orange-fill .btn { background-color: transparent; background-image: linear-gradient(to right, #B9812C 0%, #E3C74D 100%); color: #ffffff; }
+
+.btn-orange-fill .btn:before { background-color: #B9812C; border-top-color: #B9812C; border-left-color: #B9812C; }
+
+.btn-orange-fill .btn:after { background-color: #E3C74D; border-top-color: #E3C74D; border-right-color: #E3C74D; }
+
+.btn-orange-fill .btn, .btn-orange-fill .btn:visited, .btn-orange-fill .btn:active, .btn-orange-fill .btn:focus { color: #ffffff; }
+
 /*-------- 3. header style ---------*/
 .header-area { overflow: hidden; position: relative; background-color: #ffffff; }
 
@@ -649,8 +688,24 @@ a.phone i { margin-right: 12px; color: #be8930; font-size: 16px; }
 
 /*-------- 12. footer us style ---------*/
 .footer-top { overflow: hidden; position: relative; min-height: 650px; background: #363636 url("../img/footer/footer-bg.png") no-repeat; background-size: auto; background-position: left center; padding: 60px 0 80px 0; }
-.footer-top p { color: #ffffff; line-height: 1.5; }
+.footer-top p { color: #ffffff; line-height: 1.5; margin-bottom: 30px; }
 
 .footer-bottom { overflow: hidden; position: relative; background-color: #252525; padding: 20px 0; color: #ffffff; }
+
+.footer-menu, .contact-us { margin-bottom: 30px; }
+.footer-menu li, .contact-us li { padding: 8px 0; position: relative; }
+.footer-menu li:before, .contact-us li:before { content: ''; position: absolute; left: 0; top: 40%; height: 10px; width: 10px; background-color: #be8930; }
+.footer-menu li > a, .contact-us li > a { font-size: 16px; font-family: "Lato", sans-serif; color: #ffffff; margin-left: 24px; }
+
+.contact-us li:before { display: none; }
+.contact-us li > a { margin-left: 0; }
+
+.get-touch input.form-control { padding: 18px 15px; background-color: #ffffff; font-family: "Lato", sans-serif; font-size: 14px; text-transform: lowercase; line-height: 1.2; color: #252525; margin-bottom: 16px; border-radius: 5px; }
+.get-touch input.form-control::placeholder { color: #c9c8c7; text-transform: uppercase; }
+.get-touch input.form-control::-webkit-input-placeholder { color: #c9c8c7; text-transform: uppercase; }
+.get-touch input.form-control::-moz-placeholder { color: #c9c8c7; text-transform: uppercase; }
+
+.form-group { margin-bottom: 15px; }
+.form-group.mb-26 { margin-bottom: 26px; }
 
 /*# sourceMappingURL=style.css.map */
