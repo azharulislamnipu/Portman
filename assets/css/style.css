@@ -2,7 +2,7 @@
  Template Name: Bootstrap 4 Template Version: 1
 
 -----------------------------------------------------------------------------------  CSS INDEX ===================
-	 1. Template default CSS 2. Custom font CSS 2. button  CSS 4. Header 3. Social-link CSS 11.blog 12. Footer CSS
+	 1. Template default CSS 2. Custom font CSS 2. button  CSS 4. Header 3. Social-link CSS 9. we work css 10.faq 11.blog 12. Footer CSS
 
 -----------------------------------------------------------------------------------*/
 .single-testimonial p { font-size: 16px; line-height: 32px; margin: 30px auto 32px; width: 80%; }
@@ -23,7 +23,7 @@ html, body { height: 100%; }
 
 body { background-color: #ffffff; line-height: 24px; font-size: 16px; font-style: normal; font-weight: 400; font-family: "Lato", sans-serif; color: #1f2226; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Helvetica"; font-weight: 400; margin-top: 0; margin-bottom: 0; color: #1f2226; }
+h1, h2, h3, h4, h5, h6 { font-family: "Helvetica"; font-weight: 400; margin-top: 0; margin-bottom: 0; color: #252525; }
 
 h1 { font-size: 40px; }
 
@@ -725,6 +725,14 @@ a.phone i { margin-right: 12px; color: #be8930; font-size: 16px; }
 .btn-orange-fill .btn:after { background-color: #E3C74D; border-top-color: #E3C74D; border-right-color: #E3C74D; }
 
 .btn-orange-fill .btn, .btn-orange-fill .btn:visited, .btn-orange-fill .btn:active, .btn-orange-fill .btn:focus { color: #ffffff; }
+
+/*-------- 9. we work  style ---------*/
+.we-work { position: relative; padding: 90px 0; background-color: #fafafa; }
+
+.work-box h4 { color: #b98128; }
+.work-box h3 { font-weight: 300; }
+.work-box .btn-block { max-width: 250px; }
+.work-box p.opacity { opacity: .3; }
 
 /*-------- 10. faq  style ---------*/
 .faq { padding: 90px 0; position: relative; }
