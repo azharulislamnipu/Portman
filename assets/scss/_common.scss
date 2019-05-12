@@ -1331,7 +1331,9 @@ textarea:-ms-input-placeholder {
 .wrapper {
     overflow-x: hidden;
 }
-
+.container-fluid{
+    max-width: 1775px;
+}
 .top-title{
     h4{
         font-family: $helvetica;

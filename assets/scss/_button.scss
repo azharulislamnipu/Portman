@@ -57,7 +57,7 @@
   align-items: center;
 
 
-  border-radius: 10px 10px 10px 10px / 8px 8px 8px 8px;
+  border-radius: 10px 10px 10px 10px / 8px 8px 6px 8px;
   flex-grow: 1;
 }
 .btn-hexagon:after, .btn-hexagon:before {
@@ -98,18 +98,18 @@
 }
 .btn-orange-fill:hover .btn {
   background-image: none;
-  background-color: #ffb139;
+  background-color: #E3C74D;
   color: #ffffff;
 }
 .btn-orange-fill:hover .btn:before {
-  background-color: #ffb139;
-  border-top-color: #ffb139;
-  border-left-color: #ffb139;
+  background-color: #E3C74D;
+  border-top-color: #E3C74D;
+  border-left-color: #E3C74D;
 }
 .btn-orange-fill:hover .btn:after {
-  background-color: #ffb139;
-  border-top-color: #ffb139;
-  border-right-color: #ffb139;
+  background-color: #E3C74D;
+  border-top-color: #E3C74D;
+  border-right-color: #E3C74D;
 }
 .btn-orange-fill .btn {
   background-color: transparent;

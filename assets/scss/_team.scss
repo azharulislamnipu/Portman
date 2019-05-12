@@ -1,0 +1,92 @@
+/*-------- 8. the team style ---------*/
+.the-team{
+  position: relative;
+  padding: 90px 0;
+  background-color: $white;
+}
+.team-box{
+    max-width:515px;
+    h3{
+      font-weight: 300;
+    }
+    p{
+      max-width:460px
+    }
+}
+.content-box{
+  padding: 158px 0;
+  opacity: 0;
+  position: absolute;
+  top: -32px;
+  left: -15px;
+  right: 36px;
+  /* bottom: 0; */
+  margin: 0 auto;
+  text-align: center;
+  height: 354px!important;
+  width: 352px!important;
+  background: transparent;
+  transform: skewX(-24deg) rotate(-82deg) skewX(8deg);
+  h3{
+    position: absolute;
+    color: $white;
+
+  }
+  p{
+    position: absolute;
+    display: block;
+    padding: 40px;
+    color: $white;
+  }
+}
+.r-hex {
+  overflow: hidden;
+  display: inline-block;
+  margin: 4em 0;
+  width: 20em; height: 17.32em;
+  transform: rotate(-30deg) skewX(30deg);
+  border-radius: 1.5em;
+}
+.r-hex *, .r-hex *:before {
+  display: block;
+  overflow: hidden;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+}
+.r-hex-inner {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+  cursor: pointer;
+}
+
+.r-hex-inner-2 {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+  content: '';
+  position: relative;
+}
+.r-hex-inner-2:before {
+  margin-top: -1.5em;
+  height: 20em;
+  transform: skewX(-30deg) rotate(-90deg);
+  background: $theme-color url('#{$assetPath}/team/team1.png') no-repeat;
+   background-size: cover;
+  line-height: 20em;
+content: '';
+}
+
+
+.r-hex-inner-2:hover{
+ .content-box{
+   opacity: 1;
+   background: rgba(190, 137, 48, 0.73);
+ }
+
+  &:before {
+    height: 20em;
+    transform: skewX(-30deg) rotate(-90deg);
+
+    line-height: 20em;
+    content: '';
+
+}
+}
+.r-hex-inner:hover { opacity: 1; }

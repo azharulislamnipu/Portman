@@ -8,11 +8,12 @@
     CSS INDEX
     ===================
 	
-    1. Template default CSS
-    2. Custom font CSS
-    2. button  CSS
+    1. Template default css
+    2. Custom font css
+    2. button  css
     4. Header
-    3. Social-link CSS
+    3. Social-link css
+    8. the Team css
     9. we work css
     10.faq
     11.blog
@@ -25,6 +26,7 @@
 @import "header";
 @import "social-link";
 @import "button";
+@import "team";
 @import "we-work";
 @import "faq";
 @import "blog";
