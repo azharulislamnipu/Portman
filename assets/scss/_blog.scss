@@ -1,9 +1,12 @@
-/*-------- 11. Blog us style ---------*/
+/*-------- 11. Blog  style ---------*/
 .blog{
- position: relative;
+  position: relative;
   overflow: hidden;
   padding: 100px 0;
   background-color: $gray;
+ @media #{$xs-layout} {
+  padding: 50px 0px;
+ }
 }
 .single-blog{
  margin-bottom: 30px;

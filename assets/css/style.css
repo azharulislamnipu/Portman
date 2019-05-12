@@ -12,7 +12,7 @@
 /*  1. Template default CSS
 /*----------------------------------------*/
 /*-- custom Font Style --*/
-@font-face { font-family: 'Helvetica'; font-style: normal; font-weight: normal; src: local("Helvetica"), url("../fonts/Helvetica.woff") format("woff"); }
+@font-face { font-family: 'Helvetica'; src: url("../fonts/Helvetica.woff2") format("woff2"), url("../fonts/Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica.svg#Helvetica") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Helvetica'; font-style: normal; font-weight: normal; src: local("Helvetica"), url("../fonts/Helvetica-Bold.woff") format("woff"); }
 @font-face { font-family: 'Helvetica'; src: url("../fonts/Helvetica-Light.woff2") format("woff2"), url("../fonts/Helvetica-Light.woff") format("woff"), url("../fonts/Helvetica-Light.ttf") format("truetype"), url("../fonts/Helvetica-Light.svg#Helvetica-Light") format("svg"); font-weight: 300; font-style: normal; }
 @font-face { font-family: 'Helvetica Oblique'; font-style: normal; font-weight: normal; src: local("Helvetica Oblique"), url("../fonts/Helvetica-Oblique.woff") format("woff"); }
@@ -76,7 +76,7 @@ ul { list-style: outside none none; margin: 0; padding: 0; }
 
 /************************* hover
 *************************/
-.hover:hover, .navbar-nav li > a.nav-link:hover, a.phone:hover, .social li a:hover, .footer-menu li > a:hover, .contact-us li > a:hover, .hover:active, .navbar-nav li > a.nav-link:active, a.phone:active, .social li a:active, .footer-menu li > a:active, .contact-us li > a:active, .hover:focus, .navbar-nav li > a.nav-link:focus, a.phone:focus, .social li a:focus, .footer-menu li > a:focus, .contact-us li > a:focus { color: #be8930; }
+.hover:hover, .navbar-nav li > a.nav-link:hover, a.phone:hover, .social li a:hover, .card .card-header h5 a:hover, .footer-menu li > a:hover, .contact-us li > a:hover, .hover:active, .navbar-nav li > a.nav-link:active, a.phone:active, .social li a:active, .card .card-header h5 a:active, .footer-menu li > a:active, .contact-us li > a:active, .hover:focus, .navbar-nav li > a.nav-link:focus, a.phone:focus, .social li a:focus, .card .card-header h5 a:focus, .footer-menu li > a:focus, .contact-us li > a:focus { color: #be8930; }
 
 .theme-color { color: #be8930; }
 
@@ -624,7 +624,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity: 1; -ms-fi
 
 .wrapper { overflow-x: hidden; }
 
-.top-title h4 { margin-bottom: 27px; }
+.top-title h4 { font-family: "Helvetica"; font-weight: normal; }
 .top-title h2 { color: #252525; font-family: "Helvetica"; font-weight: 300; }
 
 /*-------- 3. Button us style ---------*/
@@ -726,8 +726,30 @@ a.phone i { margin-right: 12px; color: #be8930; font-size: 16px; }
 
 .btn-orange-fill .btn, .btn-orange-fill .btn:visited, .btn-orange-fill .btn:active, .btn-orange-fill .btn:focus { color: #ffffff; }
 
-/*-------- 11. Blog us style ---------*/
+/*-------- 10. faq  style ---------*/
+.faq { padding: 90px 0; position: relative; }
+.faq .mb-0 > a { display: block; position: relative; }
+.faq .mb-0 > a:after { content: "\f078"; /* fa-chevron-down */ font-family: 'FontAwesome'; position: absolute; right: 0; color: #be8930; }
+.faq .mb-0 > a[aria-expanded="true"]:after { content: "\f077"; /* fa-chevron-up */ }
+
+.card { border: none; border-radius: 0; }
+.card p { font-family: "Lato", sans-serif; font-size: 16px; margin-bottom: 30px; }
+.card ul { margin-bottom: 30PX; }
+.card ul > li { padding: 7px 0; font-family: "Lato", sans-serif; font-size: 16px; position: relative; }
+.card ul > li:before { content: '\f14a'; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; left: 0; top: 9px; color: #be8930; }
+.card ul > li p { padding-left: 30px; margin-bottom: 0; }
+
+.card .card-body { padding: 0 30px; }
+
+.card .card-header { padding: 30px 0; background: white; border-right: 0; border-left: 0; border-top: 1px solid #ebebeb; border-bottom: 0; border-radius: 0 !important; border-color: #ebebeb; }
+.card .card-header:last-child { border-bottom: 1px solid #ebebeb; }
+.card .card-header h5 { font-size: 30px; font-family: "Helvetica"; font-weight: 300; }
+
+.collapse.show { display: block; border-bottom: 1px solid #ebebeb; }
+
+/*-------- 11. Blog  style ---------*/
 .blog { position: relative; overflow: hidden; padding: 100px 0; background-color: #fafafa; }
+@media only screen and (max-width: 767px) { .blog { padding: 50px 0px; } }
 
 .single-blog { margin-bottom: 30px; }
 @media only screen and (max-width: 767px) { .single-blog { padding: 0 30px; } }
