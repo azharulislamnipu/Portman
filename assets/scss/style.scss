@@ -13,7 +13,8 @@
     2. button  CSS
     4. Header
     3. Social-link CSS
-    4. Footer CSS
+    11.blog
+    12. Footer CSS
 
 -----------------------------------------------------------------------------------*/
 @import 'variabls';
@@ -21,8 +22,9 @@
 @import 'button';
 @import "header";
 @import "social-link";
+@import "button";
+@import "blog";
 @import "footer";
-
 
 
 

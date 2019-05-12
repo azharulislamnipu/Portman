@@ -1,0 +1,51 @@
+/*-------- 11. Blog us style ---------*/
+.blog{
+ position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background-color: $gray;
+}
+.single-blog{
+ margin-bottom: 30px;
+ @media #{$xs-layout} {
+  padding: 0 30px;
+ }
+}
+.blog-slider{
+ button.slick-arrow{
+   background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  top: 50%;
+  position: absolute;
+   i{
+    font-size: 26px;
+    color: #dbdbdb;
+   }
+ }
+ .slick-prev:before,
+ .slick-next:before {
+  color: black;
+ }
+ .slick-prev{
+   left: 5px;
+ }
+ .slick-next{
+   right: 5px;
+ }
+
+
+ .slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 1;
+ }
+
+ .slick-active {
+  opacity: 1;
+ }
+
+ .slick-current {
+  opacity: 1;
+ }
+}

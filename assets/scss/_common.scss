@@ -21,11 +21,15 @@
 
 
 @font-face {
-    font-family: 'Helvetica Light';
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-Light.woff2') format('woff2'),
+    url('../fonts/Helvetica-Light.woff') format('woff'),
+    url('../fonts/Helvetica-Light.ttf') format('truetype'),
+    url('../fonts/Helvetica-Light.svg#Helvetica-Light') format('svg');
+    font-weight: 300;
     font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Light'), url('../fonts/helvetica-light-587ebe5a59211.woff') format('woff');
 }
+
 
 @font-face {
     font-family: 'Helvetica Oblique';
@@ -1320,16 +1324,20 @@ textarea:-ms-input-placeholder {
 
 
 
-/*--
-    - Background Color
-------------------------------------------*/
-
-
 .wrapper {
     overflow-x: hidden;
 }
 
-
+.top-title{
+    h4{
+        margin-bottom: 27px;
+    }
+    h2{
+        color: $dark;
+        font-family: $helvetica;
+        font-weight: 300;
+    }
+}
 
 
 
